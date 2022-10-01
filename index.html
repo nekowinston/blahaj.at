@@ -2,12 +2,38 @@
   <head>
     <title>BLÅHAJ</title>
     <style>
+
       html {
         background-image: url("blahaj.png");
         background-size: cover;
         background-repeat: no-repeat;
       }
+
+    body { height: 100vh; overflow: hidden; }
+
+    img { width: 100%; position: absolute; bottom: -50px; }
+
     </style>
   </head>
-  <body></body>
+  <body>
+
+  <img src="cutout.png" value="3">
+
+  <script>
+
+    document.addEventListener("mousemove", blahajlax)
+    const haj = document.querySelector('img')
+
+    function blahajlax (event) {
+
+      const pos = haj.getAttribute('value')
+      const x   = (window.innerWidth  - event.pageX * pos) / 90
+      const y   = (window.innerHeight - event.pageY * pos) / 90
+
+      haj.style.transform = `translateX(${x}px) translateY(${y}px)`
+
+    }
+
+  </script>
+  </body>
 </html>
