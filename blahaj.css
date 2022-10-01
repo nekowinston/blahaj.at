@@ -1,0 +1,36 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+
+body {
+
+  margin: 0; padding: 0;
+  height: 100vh;
+
+  overflow: hidden;
+
+}
+
+
+
+#background {
+
+  position: absolute;
+  top: -10vh; left: -10vw;
+
+  max-width: 150vw;
+  min-width: 120vw; min-height: 120vh;
+
+  aspect-ratio: 16/10;
+
+}
+
+
+
+#blahaj {
+
+  position: absolute;
+  bottom: -50px;
+
+  width: 100%;
+
+}
