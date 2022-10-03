@@ -17,3 +17,9 @@ function blahajlax (event) {
   haj.style.transform = `translateX(${hajX}px) translateY(${hajY}px)`
 
 }
+
+document.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.5;
+  audio.play();
+});
